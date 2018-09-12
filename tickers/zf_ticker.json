@@ -1,0 +1,30 @@
+{
+  "symbol": "BTC/JPY",
+  "timestamp": 1536719083310,
+  "datetime": "2018-09-12T02:24:43.310Z",
+  "high": 710435.0,
+  "low": 690500.0,
+  "bid": 697805.0,
+  "bidVolume": null,
+  "ask": 697950.0,
+  "askVolume": null,
+  "vwap": 700791.2857,
+  "open": null,
+  "close": 697920.0,
+  "last": 697920.0,
+  "previousClose": null,
+  "change": null,
+  "percentage": null,
+  "average": null,
+  "baseVolume": 6498.333,
+  "quoteVolume": 4553975137.976738,
+  "info": {
+    "last": 697920.0,
+    "high": 710435.0,
+    "low": 690500.0,
+    "vwap": 700791.2857,
+    "volume": 6498.333,
+    "bid": 697805.0,
+    "ask": 697950.0
+  }
+}
