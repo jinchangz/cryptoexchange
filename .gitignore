@@ -6,4 +6,5 @@
 *.png
 *.csv
 *.json
+*.txt
 nohup.out
