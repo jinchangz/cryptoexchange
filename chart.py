@@ -12,5 +12,5 @@ for ex_pair in df.columns:
     plt.ylabel('margin')
     plt.savefig('charts/margin_' + ex_pair + '.png')
     plt.pause(.01)
-    plt.show()
+    #plt.show()
     plt.clf()
