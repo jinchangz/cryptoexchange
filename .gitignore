@@ -1,0 +1,9 @@
+.vscode/*
+# charts/*.png
+# histograms/*.png
+# margins/*.csv
+# tickers/*.json
+*.png
+*.csv
+*.json
+nohup.out
