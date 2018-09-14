@@ -27,32 +27,24 @@ def get_margin(ex1, ex2):
 
     return margin
 
+def get_exchange(ex):
+    with open('tickers/'+ ex + '_ticker.json') as f:
+        exchange = json.load(f)
+        exchange['exchange'] = ex
+    return exchange
+
 if __name__ == '__main__':
+
+    exs = ['bf', 'cc', 'bb', 'qx', 'zf']
+    
     while True:
-        with open('tickers/bf_ticker.json') as f:
-            bf = json.load(f)
-            bf['exchange'] = 'bf'
-            pprint(bf)
-
-        with open('tickers/cc_ticker.json') as f:
-            cc = json.load(f)
-            cc['exchange'] = 'cc'
-
-        with open('tickers/bb_ticker.json') as f:
-            bb = json.load(f)
-            bb['exchange'] = 'bb'
-
-        with open('tickers/qx_ticker.json') as f:
-            qx = json.load(f)
-            qx['exchange'] = 'qx'
-
-        with open('tickers/zf_ticker.json') as f:
-            zf = json.load(f)
-            zf['exchange'] = 'zf'
-        
-        exchanges = [bf, cc, bb, qx, zf]
+        exchanges = []
         ex_pairs  = []
         l_margins = []
+
+        for ex in exs:
+            exchanges.append(get_exchange(ex))
+
         for ex in itertools.combinations(exchanges, 2):
             margin = get_margin(ex[0], ex[1])
             l_margins.append(round(margin, 2))
