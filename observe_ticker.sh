@@ -4,7 +4,7 @@ processName="shell.py"
 restartCmd="python shell.py &"
 interval=10
 
-array=(price_margin.py record_price.py get_cc_ticker.py get_bf_ticker.py get_bb_ticker.py get_qx_ticker.py get_zf_ticker.py)
+array=(record_margin.py record_price.py get_cc_ticker.py get_bf_ticker.py get_bb_ticker.py get_qx_ticker.py get_zf_ticker.py)
 #echo ${array[1]}
 while true
 do
