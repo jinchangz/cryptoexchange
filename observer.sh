@@ -12,7 +12,11 @@ do
     do
         isAlive=`ps -ef | grep "$v" | grep -v grep | wc -l`
         if [ $isAlive = 1 ]; then
+<<<<<<< HEAD
             :
+=======
+            # echo "Server is running."
+>>>>>>> 6dfd687bdd378b2a711264808d41de2616351f0f
         else
             echo "Server is dead, restarting..."
             python3 $v &
