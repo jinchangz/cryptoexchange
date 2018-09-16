@@ -49,14 +49,14 @@ if __name__ == '__main__':
             margin = get_margin(ex[0], ex[1])
             l_margins.append(round(margin, 2))
             ex_pairs.append(ex[0]['exchange'] +'_' + ex[1]['exchange'])
-            print(ex_pairs)
+            # print(ex_pairs)
 
         now = datetime.now().strftime("%Y_%m_%d")
         filename = "margins/margins_" + now + ".csv"
 
         target_line = linecache.getline(filename, 1)
         inlines = target_line.split(',')
-        print(len(inlines))
+        # print(len(inlines))
         if inlines[0].replace('.','').isnumeric() or len(inlines) < 2:
             if not(os.path.isfile(filename)):
                 with open(filename, mode='w') as f:

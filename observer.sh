@@ -4,8 +4,13 @@ processName="shell.py"
 restartCmd="python shell.py &"
 interval=10
 
+<<<<<<< HEAD:observe_ticker.sh
 array=(record_margin.py record_price.py get_cc_ticker.py get_bf_ticker.py get_bb_ticker.py get_qx_ticker.py get_zf_ticker.py)
 #echo ${array[1]}
+=======
+array=(`cat participant.txt|xargs`) 
+echo ${array[1]}
+>>>>>>> test:observer.sh
 while true
 do
     for v in "${array[@]}"
