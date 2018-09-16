@@ -1,0 +1,6 @@
+record_prices.py
+get_tickers/get_cc_ticker.py
+get_tickers/get_bf_ticker.py
+get_tickers/get_bb_ticker.py
+get_tickers/get_qx_ticker.py
+get_tickers/get_zf_ticker.py

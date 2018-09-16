@@ -8,3 +8,4 @@
 *.json
 *.txt
 nohup.out
+!participant.txt
