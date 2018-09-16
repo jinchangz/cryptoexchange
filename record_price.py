@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
         target_line = linecache.getline(filename, 1)
         inlines = target_line.split(',')
-        print(len(inlines))
+        # print(len(inlines))
         if inlines[0].replace('.','').isnumeric() or len(inlines) < 2:
             if not(os.path.isfile(filename)):
                 with open(filename, mode='w') as f:
@@ -42,7 +42,7 @@ if __name__ == '__main__':
                 f.write(','.join(list(map(str, exs)))+'\n')
 
         prices = ','.join(list(map(str, exchanges)))
-        print(prices)
+        # print(prices)
 
         cmd = "echo " + prices + " >> " + filename
         subprocess.run(cmd, shell=True)

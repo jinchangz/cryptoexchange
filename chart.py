@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 df = pd.read_csv("margins/margins_2018_09_12.csv")
 print(df.describe())
 for ex_pair in df.columns:
-    df[ex_pair].plot()
+    df[ex_pair].plot(figsize=(20,6))
     plt.xticks(rotation=45)
     plt.title('chart_' + ex_pair)
     plt.xlabel('ticks')
